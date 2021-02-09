@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./css/bootsrap.min.css">
   <link rel="stylesheet" href="./css/main.css">
   <title>Calories Counter</title>
+  <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script>
 </head>
 
 <body>
@@ -35,9 +36,9 @@
               <thead class="thead-light">
                 <tr>
                   <th>Totals</th>
-                  <th>0</th>
-                  <th>0</th>
-                  <th>0</th>
+                  <th id="totalCalories">0</th>
+                  <th id="totalCarbs">0</th>
+                  <th id="totalProtein">0</th>
                   <th></th>
                 </tr>
               </thead>
@@ -46,19 +47,19 @@
           <div class="card-footer">
             <div class="row mb-2">
               <div class="col">
-                <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Description">
+                <input type="text" class="form-control mb-2 mr-sm-2" id="description" placeholder="Description">
               </div>
               <div class="col">
-                <input type="number" min="0" class="form-control mb-2 mr-sm-2" placeholder="Calories">
+                <input type="number" min="0" class="form-control mb-2 mr-sm-2" id="calories" placeholder="Calories">
               </div>
               <div class="col">
-                <input type="number" min="0" class="form-control mb-2 mr-sm-2" placeholder="Carbs">
+                <input type="number" min="0" class="form-control mb-2 mr-sm-2" id="carbs" placeholder="Carbs">
               </div>
               <div class="col">
-                <input type="number" min="0" class="form-control mb-2 mr-sm-2" placeholder="Protein">
+                <input type="number" min="0" class="form-control mb-2 mr-sm-2" id="protein" placeholder="Protein">
               </div>
               <div class="col">
-                <button class="btn btn-primary mb-2">
+                <button class="btn btn-primary mb-2" onclick="validateInputs()">
                   <i class="fas fa-plus"></i>
                 </button>
               </div>
@@ -72,6 +73,8 @@
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
+  <script
+    type="text/javascript">(function () { window['__CF$cv$params'] = { r: '61f0eb145eceeaf0', m: 'e23b361ead7541a9e6b361b68e165aaf2ac8c5c4-1612908603-1800-ATcBV7lmpvbYfI86ZakZnO+9l+h5l3wK8dwRGmqy/V+c6zgMbLIGzFryO5e4tPoh7YDivI75jd7wTu1/3UiCx5jEMGr/h1t4rGur7NWKPmf59+WFWU/XoIp4Zg9mTUZStb/4QC74CBbE5gUryqxP/2w2eAYvFHv/0yQX7CzRQV4obTNFzRhJulXwIK8AYv7jI396ZUHRXDDjJ684x4BK2Gk=', s: [0x58a62b829c, 0xeca24b2faa], } })();</script>
 </body>
 
 </html>
